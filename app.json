@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Pixora_app",
+    "name": "Pixora",
     "slug": "Pixora_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "pixoraapp",
+    "scheme": "movies",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
