@@ -75,15 +75,15 @@ const _Layout = () => {
 			/>
 
 			<Tabs.Screen
-				name='profile'
+				name='search'
 				options={{
-					title: 'Profile',
+					title: 'Search',
 					headerShown: false,
 					tabBarIcon: ({ focused }) => (
 						<TabIcon
 							focused={focused}
-							icon={icons.person}
-							title='Profile'
+							icon={icons.search}
+							title='Search'
 						/>
 					),
 				}}
@@ -105,15 +105,15 @@ const _Layout = () => {
 			/>
 
 			<Tabs.Screen
-				name='search'
+				name='profile'
 				options={{
-					title: 'Search',
+					title: 'Profile',
 					headerShown: false,
 					tabBarIcon: ({ focused }) => (
 						<TabIcon
 							focused={focused}
-							icon={icons.search}
-							title='Search'
+							icon={icons.person}
+							title='Profile'
 						/>
 					),
 				}}
