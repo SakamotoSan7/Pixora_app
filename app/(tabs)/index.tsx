@@ -39,7 +39,7 @@ export default function Index() {
 			>
 				<Image
 					source={icons.logo}
-					className='w-24 h-16 mt-20 mx-auto'
+					className='w-24 h-16 mt-16 mx-auto'
 				/>
 
 				{moviesLoading ? (

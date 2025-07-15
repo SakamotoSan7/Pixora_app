@@ -40,10 +40,10 @@ const MovieCard = ({
 					/>
 
 					<Text className='text-white text-sm font-bold uppercase'>
-						{Math.round(vote_average / 2)}
+						{vote_average.toFixed(1)}
 					</Text>
 				</View>
-				
+
 				<View className='flex-row items-center justify-between'>
 					<Text className='text-xs text-light-300 font-medium mt-1'>
 						{release_date?.split('-')[0]}
