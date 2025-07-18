@@ -40,7 +40,9 @@ const MovieCard = ({
 					/>
 
 					<Text className='text-white text-sm font-bold uppercase'>
-						{vote_average.toFixed(1)}
+						{Number.isInteger(vote_average ?? 0)
+							? vote_average
+							: vote_average.toFixed(1)}
 					</Text>
 				</View>
 
