@@ -63,13 +63,26 @@ const MovieDetails = () => {
 							{movie?.title}
 						</Text>
 
+						<Text className='text-white italic text-sm'>
+							{movie?.tagline}
+						</Text>
+
 						<View className='flex-row items-center gap-x-1 mt-2'>
 							<Text className='text-light-200 text-sm'>
 								{movie?.release_date.split('-')[0]}
+								{'  •'}
 							</Text>
 
 							<Text className='text-light-200 text-sm'>
-								{movie?.runtime}m
+								{' '}
+								{movie?.runtime}m{'  •'}
+							</Text>
+
+							<Text className='text-light-200 text-sm'>
+								{' '}
+								{movie?.spoken_languages
+									?.map((l) => l.english_name)
+									.join(' - ') || 'N/A'}
 							</Text>
 						</View>
 
@@ -86,8 +99,9 @@ const MovieDetails = () => {
 								/10
 							</Text>
 
-							<Text className='text-light-200'>
-								({movie?.vote_count} votes)
+							<Text className='text-light-200 text-sm'>
+								{' '}
+								({(movie?.vote_count / 1000).toFixed(1)}K)
 							</Text>
 						</View>
 
