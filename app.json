@@ -1,7 +1,7 @@
 {
 	"expo": {
 		"name": "Pixora",
-		"slug": "Pixora_app",
+		"slug": "pixora-app",
 		"version": "1.0.0",
 		"orientation": "portrait",
 		"icon": "./assets/images/logo-p.png",
